@@ -20,7 +20,7 @@ public class Assignment1RT {
 
      public static void main(String[] args) {
 
-        File baca = new File("C:\\Users\\Win8\\Documents\\NetBeansProjects\\234278_A2\\Assignment1Test");
+        File baca = new File("C:\\Users\\Win8\\Documents\\NetBeansProjects\\234278_A1\\Assignment1Test");
 
         CountFile i = new CountFile();
         int f = i.countFile(baca);

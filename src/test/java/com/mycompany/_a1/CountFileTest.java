@@ -41,7 +41,7 @@ public class CountFileTest {
     @Test
     public void testCountFile() {
         System.out.println("countFile");
-        File dir = new File("C:\\Users\\Win8\\Documents\\NetBeansProjects\\234278_A2\\Assignment1Test");
+        File dir = new File("C:\\Users\\Win8\\Documents\\NetBeansProjects\\234278_A1\\Assignment1Test");
         int expResult = 4;
         int result = CountFile.countFile(dir);
         assertEquals(expResult, result);

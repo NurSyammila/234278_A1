@@ -62,21 +62,20 @@ public class CountIssue {
        public int count;
 
     public void Count(String[] list) {
-        for (int i = 0; i < list.length; i++) {
-            try (BufferedReader read = new BufferedReader(new FileReader(list[i]))) {
-                String rLine;
-
-                while ((rLine = read.readLine()) != null) {
-                    if (rLine.contains("public static void main")) {
-                        count++;
-                    }
-                }
-            } catch (IOException e) {
-                System.out.println("Error, file cannot be read.");
-
-            }
-
-        }
+       for (String list1 : list) {
+           try (final BufferedReader read = new BufferedReader(new FileReader(list1))) {
+               String rLine;
+               
+               while ((rLine = read.readLine()) != null) {
+                   if (rLine.contains("public static void main")) {
+                       count++;
+                   }
+               }
+           }catch (IOException e) {
+               System.out.println("Error, file cannot be read.");
+               
+           }
+       }
     }
 }
 
